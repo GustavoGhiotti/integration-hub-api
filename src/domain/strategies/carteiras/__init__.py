@@ -1,0 +1,1 @@
+from src.domain.strategies.carteiras import *

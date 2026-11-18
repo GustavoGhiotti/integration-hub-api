@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+/* Reseta HTML + body */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  overflow: hidden !important;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Animação do cursor */
+@keyframes blink {
+  0% { opacity: 1 }
+  50% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+/* Container da página */
+.page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  background: linear-gradient(135deg, #1b2235, #2c405c);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.page-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título */
+.title {
+  font-size: clamp(24px, 4vw, 40px);
+  margin-bottom: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  background: linear-gradient(90deg, #ff7300, #ffbb00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow-wrap: anywhere;
+}
+.title1 {
+  font-size: clamp(28px, 6vw, 48px);
+  margin-bottom: 0px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+/* Cursor piscando */
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  width: 10px;
+  height: 1.1em;
+  background: #ffbb00;
+  animation: blink 0.8s infinite;
+}
+
+/* Subtítulo */
+.subtitle {
+  font-size: clamp(14px, 2.2vw, 20px);
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+/* Card */
+.card {
+  margin: 0 auto;
+  padding: 24px 40px;
+}
+
+/* Linhas do card */
+.card-line {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Texto verde */
+.green {
+  color: #4fff58;
+}
+
+/* Rodapé */
+.footer {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+
+@keyframes loading-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 1.2s ease-in-out infinite;
+}

@@ -1,0 +1,2 @@
+from src.infrastructure.external.vcom.gateways.divida_ativa_vcom_gateway import VcomDividaAtivaGateway
+

@@ -1,0 +1,1 @@
+from src.shared.utils.xml_tratamentos import *

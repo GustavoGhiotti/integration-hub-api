@@ -1,0 +1,45 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+**/__pycache__
+**/venv
+**/logs
+**/__pycache__/**
+scripts**
+
+#Subir a pasta arquivos
+arquivos/** 
+!.gitkeep
+
+#Pegar a pasta boletos e qrcode dentro de arquivos
+!arquivos/boletos/
+!arquivos/qrcode/
+!arquivos/hvoice/
+
+
+#Subir a pasta de boletos e arquivos
+arquivos/boletos/**
+arquivos/qrcode/**
+arquivos/hvoice/**
+arquivos/boletos-upload/**
+!arquivos/boletos/.gitkeep
+!arquivos/qrcode/.gitkeep
+!arquivos/hvoice/.gitkeep
+!arquivos/boletos-upload/.gitkeep
+node_modules
+
+# segredos e dados locais
+.env
+.env.*
+!.env*.example
+*.pem
+*.key
+*.asc
+**/session/storage.json
+__pycache__/
+.venv/
+venv/
+node_modules/
+logs/
+*.log
